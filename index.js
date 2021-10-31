@@ -68,6 +68,11 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send("conneted to genius car mechanics server");
 });
+
+app.get('/hello', (req, res) => {
+    res.send("hello updated here");
+});
+
 app.listen(port, () => {
     console.log("conneted to genius server through port no: ", port);
 })
